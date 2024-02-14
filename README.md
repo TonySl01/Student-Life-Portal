@@ -6,4 +6,4 @@ serves as a centralized platform for students to access and book various service
 whilst offering a user-friendly interface where students can navigate through different service options and 
 make bookings as per their preferences.
 
-## For a detailed description, view the Project Report!  
+### For a detailed description, view the Project Report!  
