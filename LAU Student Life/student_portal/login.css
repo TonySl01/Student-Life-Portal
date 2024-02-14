@@ -1,0 +1,186 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('path_to_your_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+::selection {
+    background: rgba(26, 188, 156, 0.3);
+}
+
+.container {
+    max-width: 440px;
+    width: 100%;
+    z-index: 2; /* Ensures the form appears above the background */
+}
+
+.wrapper {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensures inner elements conform to border radius */
+}
+#check{
+    visibility: hidden;
+}
+.wrapper .title {
+    height: 90px;
+    background: #16a085;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form {
+    padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 50px;
+    border-radius: 5px; /* Rounded edges for inputs */
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .row i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #16a085;
+    border: 1px solid #16a085;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper form .pass {
+    margin: -8px 0 20px 0;
+}
+
+.wrapper form .pass a {
+    color: #16a085;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+}
+
+.wrapper form .button input {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #16a085;
+    border: none;
+    border-radius: 20px; /* More rounded buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wrapper form .button input:hover {
+    background: #12876f;
+}
+
+.wrapper form .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.wrapper form .signup-link a,
+.wrapper form .signup-link label {
+    color: #16a085;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper form .signup-link a:hover,
+.wrapper form .signup-link label:hover {
+    text-decoration: underline;
+}
+
+/* Additional styles for background image */
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('./LAUCAMPUS.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1; /* Keeps the background behind the content */
+}
+.wrapper form .row select {
+    height: 45px;
+    width: calc(100% - 1px); /* Adjust width to match input fields */
+    padding-left: 51px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    /* -webkit-appearance: none; */ /* Removes default styling on iOS */
+    -moz-appearance: none; /* Removes default styling on Firefox */
+    appearance: none; /* Removes default styling */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat right 15px center / 16px 16px; /* Icon */
+    background-color: white; /* Background color */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper form .row select:focus {
+    border-color: #16a085;
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+  }
+  
+  /* Style the dropdown arrow wrapper */
+  .wrapper form .row i.fa-calendar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #16a085;
+    border: 1px solid #16a085;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+
+  

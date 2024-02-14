@@ -1,0 +1,303 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the webpage */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Light grey */
+  color: #333;
+}
+
+header {
+  background-color: #1e8449; /* Darker green */
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+footer {
+  background-color: #1e8449; /* Darker green */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position:absolute;
+  bottom: 100px;
+}
+
+  
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e8449; /* Darker green */
+  position: absolute;
+  
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  list-style: none;
+
+  flex-direction: column;
+  top: 20px;
+  right: 10px;
+  z-index: 998;
+  opacity: 0;
+  
+  background-color: #1e8449; /* Darker green */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+width: 250px;
+  padding-top: 5px;
+  border-top: 2px solid #fff; /* Line separating links */
+}
+ 
+
+
+.menu.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0s linear;
+}
+
+.menu.active li {
+  display: table-row;
+  padding: 8px 0;
+  border-bottom: 1px solid #fff; /* Line separating links */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: table-cell;
+  padding: 8px 20px;
+  transition: color 0.3s ease;
+}
+
+
+
+
+
+
+.menu li {
+  margin: 10px 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Hamburger icon styling */
+.menu-toggle input {
+  display: none;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  margin-bottom: 5px;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle span:nth-child(2) {
+  width: 20px;
+}
+
+.menu-toggle span:nth-child(3) {
+  width: 15px;
+}
+
+
+
+.menu {
+  background-color: #1e8449;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: right; 
+}
+
+.menu a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 24px; 
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 8px; 
+  background-color: #1e8449; 
+  transition: background-color 0.3s ease; 
+}
+
+.menu a:hover {
+  background-color: #13542e; /* Change color on hover */
+}
+.menu li a:hover {
+  color: black; /* Hover text color */
+}
+
+
+.navbar {
+  background-color: #1e8449;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: right; 
+  position: relative;
+  
+}
+
+.navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 24px; 
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 8px; 
+  background-color: #1e8449; 
+  transition: background-color 0.3s ease; 
+}
+
+.navbar a:hover {
+  background-color: #13542e; /* Change color on hover */
+}
+/* Style buttons with the class 'custom-button' */
+.custom-button {
+  /* Set background color */
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 24px; 
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 8px; 
+  background-color: #1e8449; 
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: medium;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: #13542e; 
+}
+
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form select,
+form input[type="date"],
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #1e8449;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #155c38;
+}
+   
+
+/* CSS for gym.html */
+
+
+
+/* Main Content */
+.main-gym {
+  background-color: #14472b;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  
+  color:white;
+  width:100%;
+  align-self: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Gym Session Table */
+.gym-sessions-table {
+  
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width:100%;
+  align-self: center;  
+}
+
+/* Table styles (thead, th, td) - Include previously defined styles */
+
+/* Join Session Button */
+.join-session-btn {
+  background-color: #0b6623;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.join-session-btn:hover {
+  background-color: #14472b;
+}
